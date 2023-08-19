@@ -1,3 +1,5 @@
+
+cd D:\6_ANGULAR_K\AngularJS_2023_All 
 git init
 git add README.md
 git commit -m "first commit"
