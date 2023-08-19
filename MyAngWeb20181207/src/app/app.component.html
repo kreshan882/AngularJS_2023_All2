@@ -1,0 +1,85 @@
+<mat-sidenav-container class="example-container" (backdropClick)="sidenav.close()">
+ 
+    <mat-sidenav class="left-menu" #sidenav (keydown.escape)="sidenav.close()" disableClose>
+    
+        <mat-card class="example-card">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Shiba Inu</mat-card-title>
+                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+    
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>LIKE</button>
+                <button mat-button>SHARE</button>
+              </mat-card-actions>
+        </mat-card>
+    
+        <p><a mat-stroked-button color="accent" class="left-menu" routerLink="/" (click)="sidenav.close()">HOME PAGE</a></p>
+        <p><a mat-stroked-button color="accent" class="left-menu" routerLink="/login" (click)="sidenav.close()">LOGIN PAGE</a></p>
+        <p><a mat-stroked-button color="accent" class="left-menu" routerLink="/register" (click)="sidenav.close()">REGISTER PAGE</a></p>
+        <p><a mat-stroked-button color="accent" class="left-menu" routerLink="/profile" (click)="sidenav.close()">PROFILE PAGE</a></p>
+        
+        <p><a mat-stroked-button color="accent" class="left-menu" routerLink="/hospital" (click)="sidenav.close()">Hospital List</a></p>
+        <p><a mat-stroked-button color="accent" class="left-menu" routerLink="/doct" (click)="sidenav.close()">Doctor List</a></p>
+        <p><a mat-stroked-button color="accent" class="left-menu" routerLink="/spec" (click)="sidenav.close()">Speciality List</a></p>
+        <p><a mat-stroked-button color="accent" class="left-menu" (click)="sidenav.close()">Close</a></p>
+      </mat-sidenav>
+
+      <mat-sidenav-content id="wrapper">
+        <mat-toolbar color="background">
+            <mat-toolbar-row>
+              <mat-icon class="example-icon" (click)="sidenav.open()">menu</mat-icon>
+              <span mat-card-avatar class="image-header-logo"></span>
+              <span class="example-spacer"></span>
+              <button mat-button mat-stroked-button routerLink="/aboutus">About Us</button>
+              <button mat-button mat-stroked-button routerLink="/contactus">Contact Us</button>
+              <mat-icon matBadge="15" matBadgeColor="accent" class="example-icon">notifications</mat-icon>
+            </mat-toolbar-row>
+        </mat-toolbar>
+
+        <mat-toolbar color="warn">
+                
+            <button mat-button class="image-header-logo" [matMenuTriggerFor]="menu1">WATCHES</button>
+            <mat-menu #menu1="matMenu">
+                <button mat-menu-item>Kids Watches</button>
+                <button mat-menu-item>Mans Watches</button>
+                <button mat-menu-item>Ladies Watches</button>
+            </mat-menu>
+        
+            <button mat-button [matMenuTriggerFor]="menu2">Menu2</button>
+            <mat-menu #menu2="matMenu">
+                <button mat-menu-item>Item 1</button>
+                <button mat-menu-item>Item 2</button>
+            </mat-menu>
+            <span class="example-spacer"></span>
+
+
+            <form class="example-form">
+                    <mat-form-field class="example-full-width">
+                      <input matInput hint="kkkk" value="search items..">
+                    </mat-form-field>
+                  
+                    <button mat-raised-button color="accent" (click)="searchk()">Search</button>
+            </form>
+
+            
+            
+        </mat-toolbar>
+        <router-outlet></router-outlet>
+        
+        <!-- background:element backgrounds lighr hash
+            foreground:text and icons -verri lighr hash
+            primary:body - purple
+            accent:action button -yllow
+            warn:error red -->
+        <mat-toolbar color="background"  class="footer">
+        <footer>Test angular web (V1.00)</footer>
+    </mat-toolbar>
+
+
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

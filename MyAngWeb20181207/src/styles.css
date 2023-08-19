@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+#wrapper{
+  height: calc(100vh - 10px);
+}
+
+.mat-tab-body-wrapper{
+  height: calc(100vh - 170px);
+  padding: 16px;
+}
+

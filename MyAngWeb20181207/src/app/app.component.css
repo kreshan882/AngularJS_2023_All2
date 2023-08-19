@@ -1,0 +1,56 @@
+/* .example-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+ .example-container > * {
+    width: 60%;
+  }  */
+/* doc98 */
+.example-card {
+  max-width: 200px;
+  margin-right: 10px;
+}
+.left-menu {   
+  width: 200px;
+  margin-right: 10px;
+}
+
+.example-icon {
+    padding: 0 14px;
+    cursor: pointer;
+}
+  
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+
+
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+.image-header-logo {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba2.jpg');
+  background-size: cover;
+}
+.footer{
+  height: calc(100vh - 95vh);
+  position: absolute;
+  bottom: 0;
+  
+}
+
+/* .example-form {
+  min-width: 50px;
+  max-width: 100px;
+  width: 20%;
+}
+
+.example-full-width {
+  width: 100%;
+} */
