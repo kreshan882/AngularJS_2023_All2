@@ -27,5 +27,16 @@ export class Comptutor21to40Component {
     this.isDisplay=!this.isDisplay;
   }
 
+  //25 facebook post
+  taskList:any[]=[];
+  addTask(item:string){
+    this.taskList.push({id:this.taskList.length,name:item});
+    console.warn(this.taskList);
+  }
+
+  removeTask(id:number){
+    this.taskList=this.taskList.filter(item=>item.id!=id);
+    console.warn(this.taskList);
+  }
   
 }

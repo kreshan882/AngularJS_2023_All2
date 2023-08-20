@@ -312,6 +312,16 @@ https://www.youtube.com/watch?v=G6ZX7ivQhzI&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8
 					
 				2) add script in amm.module.ts
 					import {MatButtonModule} from '@angular/material/button';
-			
+
+https://www.youtube.com/watch?v=4kDeGqXc1ZU&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=27
 25) Todo list in angular
-			https://www.youtube.com/watch?v=4kDeGqXc1ZU&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=27   ??????????????????????
+		25.1) Add task-> show in list --> remove task (Facebook post)
+		
+26) Pass Data parent Component to Child component ???????????????????????????????????
+		
+		
+		
+		
+		
+		
+		

@@ -36,3 +36,14 @@
     <button mat-raised-button disabled>Disabled</button>
     <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
 </div>
+
+<p>25) Toto List (facebook post) .......................................................</p>
+<input type="text" placeholder="Rnter the task" #taskK/>
+<br/>
+<button (click)="addTask(taskK.value)">PostTask</button>
+<ul *ngFor="let task of taskList">
+    <li> {{task.name}} <button (click)="removeTask(task.id)">Remove</button></li>
+</ul>
+<br/>
+
+<p>26) Pass Data child To Parent  component .......................................................</p>
