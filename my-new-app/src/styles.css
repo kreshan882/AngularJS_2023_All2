@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import "~bootstrap/dist/css/bootstrap.css";
 
 .headerStyle{
     color: blue;
@@ -7,5 +7,10 @@
 
 
 body {
-    background-color: rgb(104, 103, 104);
+    background-color: rgb(217, 214, 214);
+    /* remove full body boder */
+    margin: 0px;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

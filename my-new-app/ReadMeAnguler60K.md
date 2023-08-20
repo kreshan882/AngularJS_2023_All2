@@ -250,3 +250,68 @@ https://www.youtube.com/watch?v=G6ZX7ivQhzI&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8
 		<p [style.color]="colorK2" [style.font-size]="sizek"> colour styleBinding For buttonClick</p>
 		<button (click)="updateColor()">Update Color</button
 
+21) Header Component
+		create header and css design
+		
+22) Basic Form
+		Type of Forms
+		22.1) reactive
+		22.2) template space
+		
+		22.3) form need to import in All Specific modules????????????????????????????????????????????
+		
+6.00pm		
+22) Toggle(change status) Element on button | hide and show tag
+		when hide not render the form |||  (css display:none) is renrer the form
+
+
+######### BootStrap & Metrrial UI  #############################################################################################		
+23) use Bootstrap with angular [https://www.youtube.com/watch?v=AXq9r0_kfbo&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=25]
+	==> It is a libery it will work responcive(work in all kind of devide mobile,tab,desktop)
+	==>[Install Bootstrap with 2 typw] ===> V15.1.1
+			23.1) npm i bootstrap               -----------> need manuwal congogration to style.css
+			
+			23.2) ng add @ng-bootstrap/ng-bootstrap    ----> auto conf to out angular.json file
+						"styles": [
+						  "src/styles.css"
+						]
+					23.2.2) if bug occered , below script resolved
+						npm install --legacy-peer-deps
+						npm config set legacy-peer-deps true
+						ng add @ng-bootstrap/ng-bootstrap
+						
+					23.2.3) auto configured bootstrap below files
+							UPDATE package.json app.module.ts  angular.json  src/main.ts  tsconfig.app.json  tsconfig.spec.json 
+						
+					23.2.4) bootstrap web guoid
+								Angular bootstrap 
+								https://ng-bootstrap.github.io/#/home   --> get Started -> component
+								copy and past the (html/ts)code and use it
+								
+
+24) Material UI	(have react also)
+		html & css file [ make more beautyful |  But its make slow the Application]
+		24.1) find in web
+				Angulur with meterial Ui=> https://material.angular.io/ ==> get started
+				ng add @angular/material   ---> global n, then y
+				
+		24.2) auto configured bootstrap below files
+			UPDATE package.json src/app/app.module.ts  angular.json  src/index.html  src/styles.css
+				
+		24.3) use it [get started -> components-> Buttopn]
+			import { MatSlideToggleModule } from '@angular/material/slide-toggle';  ---> app.module.ts
+			
+			<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+			
+		24.4) add button design
+				1) add script in html 
+					<div class="example-button-row">
+						<button mat-raised-button>Basic</button>
+						<button mat-raised-button color="primary">Primary</button>
+					</div>
+					
+				2) add script in amm.module.ts
+					import {MatButtonModule} from '@angular/material/button';
+			
+25) Todo list in angular
+			https://www.youtube.com/watch?v=4kDeGqXc1ZU&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=27   ??????????????????????

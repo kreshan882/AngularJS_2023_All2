@@ -1,1 +1,38 @@
-<p>comptutor21to40 works!</p>
+<h1> {{title}}</h1>
+  
+<p>22) form submition .......................................................</p>
+ 
+<form #basicForm="ngForm" (submit)="getData(basicForm.value)">
+    <input type="text" ngModel  name="name" placeholder="Enter Name"/>
+    <input type="text" ngModel  name="email" placeholder="Enter email"/>
+    <input type="text" ngModel  name="password" placeholder="Enter password"/>
+    <button>Register</button>
+</form> 
+
+<ul>
+    <li> {{useData.name}} </li>
+</ul>
+
+<p>22) Toggle Element on button | hide and show tag .......................................................</p>
+<button (click)="toggle()">Toggle</button>
+<p  *ngIf="isDisplay">Hide & Show values</p>
+
+
+<p>23) run with anguler BOOTSTRAP .......................................................</p>
+
+<p>
+    <ngb-datepicker #d></ngb-datepicker>
+	<button type="button" class="btn btn-primary">Reset</button>
+</p>
+
+<p>24) run with anguler METERIAL-UI .......................................................</p>
+<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+
+<div class="example-button-row">
+    <button mat-raised-button>Basic</button>
+    <button mat-raised-button color="primary">Primary</button>
+    <button mat-raised-button color="accent">Accent</button>
+    <button mat-raised-button color="warn">Warn</button>
+    <button mat-raised-button disabled>Disabled</button>
+    <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+</div>
