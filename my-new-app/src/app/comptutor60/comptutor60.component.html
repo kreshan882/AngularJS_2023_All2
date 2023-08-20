@@ -1,0 +1,100 @@
+
+<p class="headerStyle">comptutor60 works!</p>
+<p style="color: orchid">comptutor60 css inline</p>
+<!-- default global red, ovride to green -->
+<style>
+    .headerStyle{
+        color: green;
+    }
+</style>
+
+
+
+<button (click)="getName('kresahnR')">click me</button>
+
+<br/>
+<p>1....................................................</p>
+<!-- 
+//print keyboare key click time 
+<input type="text" #boxK2 placeholder="key down  box"  (keydown)="getData(boxK2.value)"/>
+<input type="text" #boxK3 placeholder="inout  box"  (input)="getData(boxK3.value)"/>
+
+// print pnly plur time 
+<input type="text" #boxK4 placeholder="blur  box"  (blur)="getData(boxK4.value)"/>
+-->
+
+<!-- mouse over -->
+<h1 (mouseover)="getData('mouse Select over')"> mouse over action hear</h1>
+
+<!-- print only keyboare key up time , when long press-->
+<!-- <input type="text" #boxK1 placeholder="key up  box"  (keyup)="getData(boxK1.value)"/> -->
+
+<p>2....................................................</p>
+<input type="text" #boxK1 placeholder="key up  box"  />
+<button (click)="getData(boxK1.value)">Send Data</button>
+<p>Text Box Value is: {{displayVal}}</p>
+
+<p>3....................................................</p>
+<button (click)="counterK('add')">++</button>
+<p>Counter:  {{cointerV}}</p>
+<button (click)="counterK('minus')">--</button>
+
+
+<p>4....................................................(vid-14)</p>
+<!-- interpolation -->
+<input type="text" value={{nameK}} disabled={{isDisableK}}/>  
+<!-- proporty binding (work boolean also)-->
+<input type="text" [value]=nameK [disabled]=isDisableK/>
+
+<p>15- if/else condition....................................................</p>
+<h1 *ngIf="showK; then ifBlockT else elseBlockF"> </h1>
+
+    <ng-template #ifBlockT>
+        <p>showK is true</p>
+    </ng-template>
+    <ng-template #elseBlockF>
+        <p>showK is false</p>
+    </ng-template>
+
+<p>16- if/else/if.........................................</p>
+        <ng-template [ngIf]="colorK==='red'">
+            <p>this is red</p>
+        </ng-template>
+        <ng-template [ngIf]="colorK==='blue'">
+            <p>this is blue</p>
+        </ng-template>
+
+<p>17- Switch Case condition.................................</p>
+        <div [ngSwitch]="colorK">
+            <p *ngSwitchCase="'red'"> switch call red</p>
+            <p *ngSwitchCase="'blue'"> switch call blue</p>
+            <p *ngSwitchDefault > switch call default option</p>
+        </div>
+
+<p>18- print array list & Object List.................................</p>
+        <p *ngFor="let usr of userArray">
+             Array List: {{usr}}
+        </p>
+
+        <p *ngFor="let usr of userObject">
+           Object Detail: {{usr.name}} :  {{usr.email}}: {{usr.phone}}
+        </p>
+
+<p>19- print Nested Loop.................................</p>
+    <ul *ngFor="let user of userList">
+        <li>{{user.name}} </li> 
+        <li>{{user.phone}} </li> 
+        <ul *ngFor="let account of user.accounts">
+            <li>{{account}} </li>
+        </ul>
+    </ul>
+
+<p>20- Style Binding & dynamic colour.................................</p>
+        <!-- [style.font-size]="'50px'"> -->
+    <p [style.color]="colorK2" [style.font-size]="sizek"> colour styleBinding For buttonClick</p>
+    <button (click)="updateColor()">Update Color</button>
+
+
+
+
+
