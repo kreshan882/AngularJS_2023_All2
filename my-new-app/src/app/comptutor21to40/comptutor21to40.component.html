@@ -1,6 +1,6 @@
 <h1> {{title}}</h1>
   
-<p>22) form submition .......................................................</p>
+<p>22) form submition ngModel & ngForm.......................................................</p>
  
 <form #basicForm="ngForm" (submit)="getData(basicForm.value)">
     <input type="text" ngModel  name="name" placeholder="Enter Name"/>
@@ -46,4 +46,27 @@
 </ul>
 <br/>
 
-<p>26) Pass Data child To Parent  component .......................................................</p>
+<p>26) Pass Data Parent To Child  component .......................................................</p>
+
+<app-child [itemk]="dataPass"></app-child>
+<button (click)="updateChild()">UpdateChild</button>
+
+<p>27) Reusable component .......................................................</p>
+
+<ul *ngFor="let user of userDetails">
+    <app-child [itemuser]='user'></app-child>
+</ul>
+
+<p>28) Pass Data child To Parent component .......................................................</p>
+
+<app-child (updateDataEvent)="updateData($event)"></app-child>
+<p>{{data}}</p>
+
+<p>29) Two Way Binding .......................................................</p>
+
+<input type="text" [(ngModel)]="twoWayBindData" />
+<p>TowWayBinData: {{twoWayBindData}}</p>
+
+<p>30) Template Reference Variable .......................................................</p>
+<input type="text" #box/>
+<button (click)="getVal(box.value)">RefVal</button>

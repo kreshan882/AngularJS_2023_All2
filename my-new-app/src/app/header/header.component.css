@@ -18,8 +18,13 @@ ul li{
 
 li a{
     color: white;
+    font-weight: bold;
     /*remove underline  */
     text-decoration: none;
     cursor: pointer;
     ;
+}
+
+div{
+    padding-left: 40px;
 }

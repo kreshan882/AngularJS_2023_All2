@@ -1,0 +1,9 @@
+
+<!-- <p>iam child,value from parent is :{{itemk}}</p> -->
+
+<li>{{itemuser.name}} : {{itemuser.age}} ::: {{itemk}}</li>
+
+<!-- Child to parent  -->
+<input type="text" #box />
+<button (click)="updateDataEvent.emit(box.value)">SebdValurToParent</button>
+
