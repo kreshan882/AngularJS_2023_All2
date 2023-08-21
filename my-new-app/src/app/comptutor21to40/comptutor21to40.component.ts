@@ -39,4 +39,36 @@ export class Comptutor21to40Component {
     console.warn(this.taskList);
   }
   
+  //26 pass the value parent to child component
+  dataPass=10;
+
+  updateChild(){
+    this.dataPass=Math.floor(Math.random()*10);
+  }
+
+  //27 Reusable component , using child component
+
+  userDetails=[
+    {name:"kresh",age:"35"},
+    {name:"dhar",age:"30"},
+    {name:"kowsik",age:"4"}
+  ]
+
+  //28 pass the value child to Parent component
+  data="x";
+  updateData(item:string){
+      console.warn(item);
+      this.data=item;
+  }
+
+//29)  2 way BINDING
+twoWayBindData:any;
+
+//30)  Template Referance Variable
+//getVal(data:HTMLInputElement){  ----> this type also can use
+getVal(data:any){
+    console.warn(data);
+    alert (data);
+}
+
 }

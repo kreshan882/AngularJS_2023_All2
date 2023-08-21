@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Comptutor60Component } from './comptutor60.component';
+import { Comptutor00to20Component } from './comptutor00to20.component';
 
 describe('Comptutor60Component', () => {
-  let component: Comptutor60Component;
-  let fixture: ComponentFixture<Comptutor60Component>;
+  let component: Comptutor00to20Component;
+  let fixture: ComponentFixture<Comptutor00to20Component>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [Comptutor60Component]
+      declarations: [Comptutor00to20Component]
     });
-    fixture = TestBed.createComponent(Comptutor60Component);
+    fixture = TestBed.createComponent(Comptutor00to20Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

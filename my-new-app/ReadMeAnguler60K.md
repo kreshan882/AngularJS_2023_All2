@@ -318,10 +318,62 @@ https://www.youtube.com/watch?v=4kDeGqXc1ZU&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8
 		25.1) Add task-> show in list --> remove task (Facebook post)
 		
 26) Pass Data parent Component to Child component ???????????????????????????????????
+		parent
+			dataPass=10;
+			<app-child [itemk]="dataPass"></app-child>
+			
+		Child
+			import { Component,Input} from '@angular/core'; 
+			@Input() itemk=0;
+			<p>{{itemk}}</p>
 		
+27) Reusable Component
+		27.1) in child component (using to shoe name & email)
+		27.2) we can use this component everywhere (user shor, customew show, driver show)
 		
-		
-		
-		
-		
-		
+28) Send data child to parent component		
+		28.1) child
+			 @Output() updateDataEvent=new EventEmitter<string>();
+			 <input type="text" #box />
+			 <button (click)="updateDataEvent.emit(box.value)">SebdValurToParent</button>
+		28.2) Parent
+			 <app-child (updateDataEvent)="updateData($event)"></app-child>
+			 <p>{{data}}</p>
+
+29) TWO WAY BINDING same component
+		1) Updating & Displaying the proporty At same time
+		2) 	<input type="text" [(ngModel)]="twoWayBindData" />
+			<p>TowWayBinData: {{twoWayBindData}}</p>
+			 
+			twoWayBindData:any;
+			
+30) Template Reference Variable
+		1) html DOM (also can get value)
+		1) #box  (box.value |box | box.name)| .......)
+			<input type="text" #box/>
+			<button (click)="getVal(box.value)"></button>
+
+
+
+######################################################################################
+https://www.youtube.com/watch?v=p36ehVmF0CM&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=33
+
+31) Basic typescript for angular  ????????????????????????????
+
+
+
+
+
+
+
+
+
+39) Basicic Rouring Done
+		<a  routerLink="aboutus">About Us</a>
+		<router-outlet></router-outlet>
+
+
+
+
+
+

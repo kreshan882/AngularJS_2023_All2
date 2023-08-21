@@ -1,11 +1,17 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-comptutor60',
-  templateUrl: './comptutor60.component.html',
-  styleUrls: ['./comptutor60.component.css']
+  selector: 'app-comptutor00to20',
+  templateUrl: './comptutor00to20.component.html',
+  styleUrls: ['./comptutor00to20.component.css']
 })
-export class Comptutor60Component {
+export class Comptutor00to20Component implements OnInit{
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
   titleK = 'User Add Page in root';
   
   //interpolation & proporty binding test
