@@ -359,14 +359,36 @@ https://www.youtube.com/watch?v=4kDeGqXc1ZU&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8
 https://www.youtube.com/watch?v=p36ehVmF0CM&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=33
 
 31) Basic typescript for angular  ????????????????????????????
+		.ts ---> can provide type to function & proporty [ number, string , any , objectType , Array trpe]
 
+		  data31:string|number='';
+		  obj31:{name:string,phn:number}={name:'',phn:0};
+		  arr31:number[]=[1,2,3];
 
+32/33) PIPES
+		upcase | lowercase | our definition 
 
+		2 Pipes same type
 
+34) Customer Pips
+		>>ng g p pipes/usdLkr   [usd-lkr]
+		<p> {{100 | usdLkr :251}}</p>
+		
+		//change trupe Unknown-> number
+		  transform(value: number, ...args: number[]): unknown {
+			const[multiplier]=args;
+			return value*multiplier;
+		  }
+  
+35) FORM (#35-38)
+		1) TEMPLATE FORM  [34/35/36-done]
+				---> most of the work /validataion handel on html
+				
+		2) REACTIVE FORM(37 done)
+				---> most of the work /validataion handel on ts - class file
 
-
-
-
+38) DiRECTIVES ????????????
+https://www.youtube.com/watch?v=jzBPa9VsTCI&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=43
 
 39) Basicic Rouring Done
 		<a  routerLink="aboutus">About Us</a>
