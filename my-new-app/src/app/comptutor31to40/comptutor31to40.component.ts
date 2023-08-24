@@ -54,4 +54,10 @@ export class Comptutor31to40Component {
   get passwordRF(){
     return this.loginFormRF.get('passwordRF');
   }
+
+  //38 (derivatived ngIf|ngFor |UserDefin (appRedEleK)) - done
+
+  //39 Basic routing (header form)
+  //40 Dinamic routing (update page loading with different user)
+        // check in header (ckick out then click kowsik & Dharanik)
 }

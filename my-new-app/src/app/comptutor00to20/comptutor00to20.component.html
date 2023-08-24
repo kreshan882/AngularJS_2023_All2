@@ -13,7 +13,7 @@
 <button (click)="getName('kresahnR')">click me</button>
 
 <br/>
-<p>1....................................................</p>
+<p>1 KeyDown| Mouseover....................................................</p>
 <!-- 
 //print keyboare key click time 
 <input type="text" #boxK2 placeholder="key down  box"  (keydown)="getData(boxK2.value)"/>
@@ -29,24 +29,24 @@
 <!-- print only keyboare key up time , when long press-->
 <!-- <input type="text" #boxK1 placeholder="key up  box"  (keyup)="getData(boxK1.value)"/> -->
 
-<p>2....................................................</p>
+<p>2 butto (click)....................................................</p>
 <input type="text" #boxK1 placeholder="key up  box"  />
 <button (click)="getData(boxK1.value)">Send Data</button>
 <p>Text Box Value is: {{displayVal}}</p>
 
-<p>3....................................................</p>
+<p>3 counter....................................................</p>
 <button (click)="counterK('add')">++</button>
 <p>Counter:  {{cointerV}}</p>
 <button (click)="counterK('minus')">--</button>
 
 
-<p>14 INTERPOLATION & PROPORTY-BINDING.....................................</p>
+<p>14 INTERPOLATION namek-dubelBracker & PROPORTY-BINDING [value].....................................</p>
 <!-- interpolation -->
 <input type="text" value={{nameK}} disabled={{isDisableK}}/>  
 <!-- proporty binding (work boolean also)-->
 <input type="text" [value]=nameK [disabled]=isDisableK/>
 
-<p>15- if/else condition....................................................</p>
+<p>15- if/else condition, with ng-template....................................................</p>
 <h1 *ngIf="showK; then ifBlockT else elseBlockF"> </h1>
 
     <ng-template #ifBlockT>
@@ -56,7 +56,7 @@
         <p>showK is false</p>
     </ng-template>
 
-<p>16- if/else/if.........................................</p>
+<p>16- if/else/if within ng-template.........................................</p>
         <ng-template [ngIf]="colorK==='red'">
             <p>this is red</p>
         </ng-template>
@@ -64,7 +64,7 @@
             <p>this is blue</p>
         </ng-template>
 
-<p>17- Switch Case condition.................................</p>
+<p>17- Switch Case condition[ngSwitch /ngSwitchCase/ngSwitchDefault].................................</p>
         <div [ngSwitch]="colorK">
             <p *ngSwitchCase="'red'"> switch call red</p>
             <p *ngSwitchCase="'blue'"> switch call blue</p>

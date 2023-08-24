@@ -125,6 +125,7 @@ https://www.youtube.com/watch?v=G6ZX7ivQhzI&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8
 				
 				1.1) Component 1 --> user login
 						>>ng generate component user-auth/login
+						  
 						
 				1.2) Component 2 --> register
 				1.3) Component 3 --> forget password
@@ -387,15 +388,84 @@ https://www.youtube.com/watch?v=p36ehVmF0CM&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8
 		2) REACTIVE FORM(37 done)
 				---> most of the work /validataion handel on ts - class file
 
-38) DiRECTIVES ????????????
-https://www.youtube.com/watch?v=jzBPa9VsTCI&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=43
+38) DiRECTIVES (direct..ives)  [ngIF | ngFor |]
+		38.1) using diaractived can update html element
+		38.2) this is the class is used to update html element
+				ngIf=disavle  (hide the hrml element)
+				ngFor = display element multi time
+				
+		38.3) Create User define diractives
+				>>ng g directive directives/redEleK
+						el.nativeElement.style.color="red";  (style not avaliable in latest version)
+			
 
 39) Basicic Rouring Done
 		<a  routerLink="aboutus">About Us</a>
 		<router-outlet></router-outlet>
+		
+		const routes: Routes = [
+		  { path:'tute0020', component: Comptutor00to20Component},
+		];
+
+40) Dynamic ROUTING(update page loading with different user) - done
+		update User Form Loading [http://127.0.0.1:4200/update/{id}]
+		ng generate component userk
+		
+		
+41) Wild Card | 404 page routing
+		invalid url loading page
+		ng g c no-page404
+		 { path:'**', component: NoPage404Component}   // no page routing (wild card )
+		 
+		 
+42) Child Routes
+			Page inside the page [About --> About Componet |About me]
+
+---------------------------------------------------------------------------------------------------			
+43) Services.
+		same data / proporty / file  ---> need to access different component
+		 
+		   memberData=[
+			{name:'kowsik',email:'kowsik@gmail.com'},
+			{name:'dhatanik',email:'dharanik@gmail.com'},
+		  ]
+
+		  if do we have to print this in home & footer (we have to dupliate) - service willl resolved this issue
+		  
+44) CREATE SERVICE & Use in Multi Component
+		ng g service service/userdata
+		
+		one user_service_data_list inside Service (can used multi componetn)
+		 
+45) get data from API from services
+			DATA FLOW====> Component -> service -> http Module <------> Backend server[SpringBoot]
+			
+		 url="https://randomuser.me/api";
+		 constructor(private http:HttpClient) { }
+			user_service_data(){
+			return this.http.get(this.url);
+		 }
+		 
+		 	 
+		//45 value from api
+		userdataK.user_service_data().subscribe((data)=>{
+			console.warn('data',data);
+			this.user_service_data_list=data;    
+		})
+	
+
+46) API POST METHOD  [#46 == 51]]
+		already done in MyAngWeb20181207 , form-> click-> post-> save to h2 db
+		
+	
+######################################################################################################################
+[#46 == 51]]
+
+52-60 loarn
+52) 	
 
 
-
+https://www.youtube.com/watch?v=sGYEZvGu5ak&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=52
 
 
 

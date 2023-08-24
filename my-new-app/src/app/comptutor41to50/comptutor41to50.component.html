@@ -1,0 +1,45 @@
+<p>comptutor41to50 works!</p>
+
+<p>41) 404 page routing(wild card).......................................................</p>
+<ul>
+<li> <a  routerLink="userxyzzz">no page</a></li>
+</ul>
+
+
+<p>42) Child routing [About->AbourMe|AboutComponey].......................................................</p>
+
+<li> <a  routerLink="about">About Parent</a></li>
+<!-- router-outlet need to add in parent component -->
+<router-outlet></router-outlet>
+
+<p>43) Services.......................................................</p>
+ <!-- withOur Service: need duplocate memberData for multi Component -->
+<ul>
+    <li *ngFor="let user of memberData">
+        {{user.name}}
+    </li>
+</ul>
+<p>44) Services.......................................................</p>
+ <!-- with Service: one memberData for multi Component -->
+<ul>
+    <li *ngFor="let user2 of user_service_data_list">
+        {{user2.name}} ---{{user2.email}}
+    </li>
+</ul>
+
+<app-footer></app-footer>
+
+<p>45) Call API from Services.......................................................</p>
+<!-- service component modified, to call api -->
+
+
+<p>45) Call API POST method [#45==51].......................................................</p>
+<!-- already done in MyAngWeb20181207 , form-> click-> post-> save to h2 db -->
+
+<form #userForm="ngForm" (ngSubmit)="getUserFormData(userForm)">
+    <input type="text"  ngModel name="name" placeholder="Enter Name"/>
+    <br/>
+    <input type="password"  ngModel name="password" placeholder="Enter Password"/>
+    <br/>
+    <button>Login</button>
+</form>

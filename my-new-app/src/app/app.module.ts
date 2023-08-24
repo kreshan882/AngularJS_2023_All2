@@ -15,7 +15,16 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle'; //manuwal
 import {MatButtonModule} from '@angular/material/button';//add Metterial button
 import { ChildComponent } from './child/child.component';
 import { Comptutor31to40Component } from './comptutor31to40/comptutor31to40.component';
-import { UsdLkrPipe } from './pipes/usd-lkr.pipe'; 
+import { UsdLkrPipe } from './pipes/usd-lkr.pipe';
+import { RedEleKDirective } from './directives/red-ele-k.directive';
+import { UserkComponent } from './userk/userk.component';
+import { Comptutor41to50Component } from './comptutor41to50/comptutor41to50.component';
+import { NoPage404Component } from './no-page404/no-page404.component';
+import { AboutComponent } from './about/about.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { AboutComponeyComponent } from './about-componey/about-componey.component';
+import { FooterComponent } from './footer/footer.component'; 
+import { HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +33,15 @@ import { UsdLkrPipe } from './pipes/usd-lkr.pipe';
     HeaderComponent,
     ChildComponent,
     Comptutor31to40Component,
-    UsdLkrPipe
+    UsdLkrPipe,
+    RedEleKDirective,
+    UserkComponent,
+    Comptutor41to50Component,
+    NoPage404Component,
+    AboutComponent,
+    AboutMeComponent,
+    AboutComponeyComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +51,8 @@ import { UsdLkrPipe } from './pipes/usd-lkr.pipe';
     UserAuthModule,  //add new UserAuthModule, to root module(AppModule)
     NgbModule, BrowserAnimationsModule,
     MatSlideToggleModule,
-    MatButtonModule                  
+    MatButtonModule ,
+    HttpClientModule   //inside service api call                 
   ],
   providers: [],
   bootstrap: [AppComponent]
