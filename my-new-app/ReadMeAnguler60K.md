@@ -460,12 +460,98 @@ https://www.youtube.com/watch?v=p36ehVmF0CM&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8
 	
 ######################################################################################################################
 [#46 == 51]]
-
-52-60 loarn
-52) 	
-
-
 https://www.youtube.com/watch?v=sGYEZvGu5ak&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=52
+52-60 loarn [my-new-app2-52]
+
+52) Model and Interface   (not module/component)	
+		model: sata type in json object 
+		
+53) Recap Module && Recap Routing
+		routerLink-> user login component
+		routerLink-> user List component
+			ng g m users
+			ng g c users/login
+			ng g c users/list
+   
+54) Routing Module  (create module with routing module)
+		define routing inside the module(user Module)
+		  Routeing inside the single module
+			  ng g m admin --routing   ===> 2 file [module file + routing file]
+			  ng g c admin/login
+			  ng g c admin/list
+		
+		
+55) Group Routing Modules
+		  ng g m user_rm --routing   ===> 2 file [module file + routing file]
+		  ng g c user_rm/login
+		  ng g c user_rm/list
+		  
+		const routes: Routes = [
+		  {path:"admin",children:[
+			{path:"login",component:LoginComponent},
+			{path:"list",component:ListComponent},
+		  ]}
+		];
+		
+		 <li> <a routerLink="admin/login">Admin Routing Login</a> </li>
+		 <li> <a routerLink="admin/list">Admin Routing List</a> </li>
+
+		 
+56) Lazy Loading Module		
+		55.1) when inital load time (all Module & Routing Module is loaded )---> problam
+			  Lazy Load: when click then only load inner component & Modules
+		
+		55.2) App.module.ts -----> remove module import
+			  app-routing.module.ts -----> impoer module hear differnt way(when click only load)
+			  
+				{path:"adminLL",loadChildren:()=>import('./admin/admin.module') 
+                  .then(mod=>mod.AdminModule)
+				},
+		
+57) Lazy Loading component		
+		Button Click load the component
+		ng g c boc
+		ng g c ntb
+			
+		async loadNTB(){
+			this.vcr.clear();
+			const {NtbComponent}= await import('./ntb/ntb.component');
+			this.vcr.createComponent(
+			  this.cfr.resolveComponentFactory(NtbComponent)
+			)
+		}
+		
+58) Automation TESTING
+		1) good for large application [easy to smak test when changes done]
+		2) NOT goog for sequencely changeing project
+		3) test sctipt did for some importan function only [can get pass / fail list]
+		4) unit testing - test saamm function
+		   end to end testing   ---> testing complete application
+		   integration testing ---> connecti with api
+		
+		5) PRODUCTOR---> one conf file
+		   JASMIN ---> run seec file inside our app app-cpmpinent.spec.ts
+		   KARMA ---> end to end testing  [AngularJS_2023_All2/MyAngWeb20181207/e2e/*]  -------> End To End test case
+		
+59) UNIT Testing [https://angular.io/guide/testing]
+		59.1) >> cd D:\PROJECTS_K\ANGULAR_K\AngularJS_2023_All2\AngularJS_2023_All2\my-new-app2-52
+			  >> ng test   ---> http://localhost:9876/?id=24687610   (KARMA-V6.4.2  | Jasmine |Chrome 116)
+		
+		59.2) newtestkreshan.spec.ts ----------> All SPEC file testing is loaded in jasmin
+		
+			//12th testcase (rerun >> ng test) ----> this component alse loaded heat
+			describe("dummy componentK",()=>{
+				it("lets check amount matching",()=>
+					expect(100).toBe(100) 
+				)
+			})
+			
+60) UNIT TESTING (boc.container.spec.ts)
+		variavle
+		function
+		html element 
+		
+		
 
 
 

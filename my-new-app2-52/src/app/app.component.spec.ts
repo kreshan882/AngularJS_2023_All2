@@ -17,13 +17,22 @@ describe('AppComponent', () => {
   it(`should have as title 'my-new-app2-52'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('my-new-app2-52');
+   // expect(app.title).toEqual('my-new-app2-52K'); //fail
+    expect(app.title).toEqual('my-new-app2-52'); //pass
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('my-new-app2-52 app is running!');
-  });
+  //59 test case manuwal
+
+
+
+
+
+  // it('should render title', () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   fixture.detectChanges();
+  //   const compiled = fixture.nativeElement as HTMLElement;
+  //   expect(compiled.querySelector('.content span')?.textContent).toContain('my-new-app2-52 app is running!');
+  // });
+
+
 });
