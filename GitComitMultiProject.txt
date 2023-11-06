@@ -8,7 +8,7 @@ UploAD PROJECT
 2) git init
 3) ---------git add GitComitMultiProject.txt MyAngWeb20181207/ my-new-app/    ---> only first time
    git add GitComitMultiProject.txt
-   git add git add MyAngWeb20181207/e2e/* MyAngWeb20181207/src/* MyAngWeb20181207/angular.json MyAngWeb20181207/package.json MyAngWeb20181207/RewadmeK.md MyAngWeb20181207/tsconfig.json MyAngWeb20181207/tslint.json  
+   git add MyAngWeb20181207/e2e/* MyAngWeb20181207/src/* MyAngWeb20181207/angular.json MyAngWeb20181207/package.json MyAngWeb20181207/ReadmeK.md MyAngWeb20181207/tsconfig.json MyAngWeb20181207/tslint.json  
    git add my-new-app/src/* my-new-app/angular.json my-new-app/package.json my-new-app/ReadMeAnguler60K.md my-new-app/tsconfig.app.json my-new-app/tsconfig.json my-new-app/tsconfig.spec.json         
    git add my-new-app2-52/src/* my-new-app2-52/angular.json my-new-app2-52/package.json my-new-app2-52/README.md my-new-app2-52/tsconfig.app.json my-new-app2-52/tsconfig.json my-new-app2-52/tsconfig.spec.json
 
