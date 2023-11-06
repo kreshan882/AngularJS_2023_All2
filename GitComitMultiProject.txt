@@ -16,3 +16,8 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/kreshan882/AngularJS_2023_All2.git
 git push -u origin main
+
+
+## roleback local changes
+cd D:\6_ANGULAR_K\AngularJS_2023_All
+git reset --hard
