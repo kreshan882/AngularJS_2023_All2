@@ -67,7 +67,7 @@ https://www.youtube.com/watch?v=G6ZX7ivQhzI&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8
 																					can noy do in html {{1++}} ==>error
 																					
 6) Angular cli & import commants
-		aoto generate comments
+		auto generate comments
 		cd MyProject/
 		6.1) >>ng generate component login ( auto create login folder and 4 comp files)
 		
